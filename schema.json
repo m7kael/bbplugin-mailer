@@ -46,6 +46,22 @@
           "html": {
             "type": "string",
             "title": "HTML"
+          },
+          "attachmentSelect": {
+            "type": "boolean",
+            "title": "Attachment"
+          },
+          "attachment": {
+            "type": "string",
+            "title": "Attachment"
+          },
+          "attachmentName": {
+            "type": "string",
+            "title": "Attachment name"
+          },
+          "attachmentType": {
+            "type": "string",
+            "title": "Attachment type"
           }
         }
       },

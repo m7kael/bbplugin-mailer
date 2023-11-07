@@ -17,7 +17,14 @@ export default async function run({ inputs }: AutomationStepInput) {
     from: inputs.emailFrom,
     to: inputs.emailTo,
     subject: inputs.subject,
-    html: inputs.html
+    html: inputs.html,
+    attachments: [
+      {
+        filename: inputs.attachmentName,
+        content: inputs.attachment,
+        encoding: inputs.attachmentType
+      }
+    ]
   }
   
   try {
