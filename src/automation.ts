@@ -13,18 +13,25 @@ export default async function run({ inputs }: AutomationStepInput) {
     }
   })
 
-  const options = {
+  const options: {
+    from: string;
+    to: string;
+    subject: string;
+    html: string;
+    attachments?: { filename: string; content: string; encoding: string }[];
+  } = {
     from: inputs.emailFrom,
     to: inputs.emailTo,
     subject: inputs.subject,
     html: inputs.html,
-    attachments: [
-      {
-        filename: inputs.attachmentName,
-        content: inputs.attachment,
-        encoding: inputs.attachmentType
-      }
-    ]
+  }
+
+  if (inputs.attachmentSelect) {
+    options.attachments = [ {
+      filename: inputs.attachmentName,
+      content: inputs.attachment,
+      encoding: inputs.attachmentType
+    } ]
   }
   
   try {
