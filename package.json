@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@budibase/types": "^2.0.13",
-    "@sveltejs/kit": "^1.27.3",
     "node-fetch": "^2",
     "nodemailer": "^6.9.7",
     "svelte-email": "^0.0.4"
