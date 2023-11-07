@@ -1,0 +1,68 @@
+{
+  "type": "automation",
+  "metadata": {},
+  "schema": {
+    "name": "mailer",
+    "tagline": "A mailer component",
+    "icon": "Email",
+    "description": "A mailer component",
+    "type": "action",
+    "stepId": "mailer",
+    "schema": {
+      "inputs": {
+        "properties": {
+          "host": {
+            "type": "string",
+            "title": "Host"
+          },
+          "port": {
+            "type": "string",
+            "title": "Port"
+          },
+          "user": {
+            "type": "string",
+            "title": "User"
+          },
+          "pass": {
+            "type": "string",
+            "title": "Pass"
+          },
+          "emailTo": {
+            "type": "string",
+            "title": "Email to"
+          },
+          "emailCc": {
+            "type": "string",
+            "title": "Email cc"
+          },
+          "emailFrom": {
+            "type": "string",
+            "title": "Email from"
+          },
+          "subject": {
+            "type": "string",
+            "title": "Subject"
+          },
+          "html": {
+            "type": "string",
+            "title": "HTML"
+          }
+        }
+      },
+      
+      "outputs": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "Whether the action was successful"
+          },
+          "message": {
+            "type": "string",
+            "description": "What was output"
+          }
+        },
+        "required": ["success", "message"]
+      }
+    }
+  }
+}
