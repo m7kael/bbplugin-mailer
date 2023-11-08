@@ -19,19 +19,20 @@ After the installation the plugin is ready to use with automations. Just enter t
 
 <b>Fields</b>
 
-Host - Your email provider smpt server (example smpt.mail.com)
-Port - Your email provider port (example 465)
-User - The username for auth 
-Pass - The password for auth
-Email to - The recipents, comma separated when multiple (example user@mail.com, user2@mail.com,...)
-Email cc - The cc recipents, same as email to
-Email from - the email to send from
-Subject - Subject of the email
-Html - The email content in html
+- <b>Host</b> - Your email provider smpt server (example smpt.mail.com)
+- <b>Port</b> - Your email provider port (example 465)
+- <b>User</b> - The username for auth 
+- <b>Pass</b> - The password for auth
+- <b>Email to</b> - The recipents, comma separated when multiple (example user@mail.com, user2@mail.com,...)
+- <b>Email cc</b> - The cc recipents, same as email to
+- <b>Email from</b> - the email to send from
+- <b>Subject</b> - Subject of the email
+- <b>Html</b> - The email content in html
+
 Select attachment if to include attachment
-Attachment - The attachment, for example base64 string
-Attachment name - The name of the attachment (example attachment.pdf)
-Attachment type - The type of the attachment (example base64)
+- <b>Attachment</b> - The attachment, for example base64 string
+- <b>Attachment name</b> - The name of the attachment (example attachment.pdf)
+- <b>Attachment type</b> - The type of the attachment (example base64)
 
 Example
 <p><img src="src/images/screenshot.png"></p>
